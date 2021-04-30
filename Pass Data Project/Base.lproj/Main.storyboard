@@ -115,7 +115,6 @@
                                 </state>
                                 <connections>
                                     <action selector="goBackTap:" destination="YmT-gI-Vdx" eventType="touchUpInside" id="JaA-Di-0BC"/>
-                                    <segue destination="vQ3-5s-Fxm" kind="unwind" unwindAction="unwindSegueToMainScreenWithSegue:" id="3p6-S4-PDu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -133,6 +132,7 @@
                     <navigationItem key="navigationItem" id="ate-3M-4u5"/>
                     <connections>
                         <outlet property="label" destination="HGe-IH-mhd" id="e4K-02-KI7"/>
+                        <segue destination="vQ3-5s-Fxm" kind="unwind" identifier="unwindSegue" unwindAction="unwindSegueToMainScreenWithSegue:" id="WyJ-0d-jkH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xDg-56-RIF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
