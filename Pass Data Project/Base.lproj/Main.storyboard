@@ -47,6 +47,12 @@
                                     <action selector="loginTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6sH-A9-UpD"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ddd" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNM-8J-PKa">
+                                <rect key="frame" x="132" y="739.5" width="150" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
@@ -57,14 +63,18 @@
                             <constraint firstItem="p3G-mT-hWY" firstAttribute="top" secondItem="MM2-Jc-fUN" secondAttribute="bottom" constant="35.5" id="ERD-12-v3W"/>
                             <constraint firstItem="DfN-YU-SKM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="FwI-np-Hvg"/>
                             <constraint firstItem="p3G-mT-hWY" firstAttribute="centerX" secondItem="DfN-YU-SKM" secondAttribute="centerX" id="IDq-hr-XPq"/>
+                            <constraint firstItem="TNM-8J-PKa" firstAttribute="leading" secondItem="DfN-YU-SKM" secondAttribute="leading" id="IbF-jo-WqS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DfN-YU-SKM" secondAttribute="bottom" constant="45" id="SVc-Pj-xP6"/>
                             <constraint firstItem="MM2-Jc-fUN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="XHa-BX-POs"/>
                             <constraint firstItem="MM2-Jc-fUN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="fc5-tE-rbw"/>
+                            <constraint firstItem="TNM-8J-PKa" firstAttribute="trailing" secondItem="DfN-YU-SKM" secondAttribute="trailing" id="rR3-AO-qY2"/>
+                            <constraint firstItem="DfN-YU-SKM" firstAttribute="top" secondItem="TNM-8J-PKa" secondAttribute="bottom" constant="27" id="vRv-fq-Z5k"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="loginTF" destination="Cza-YS-xHu" id="gUi-jY-DMr"/>
                         <outlet property="passwordTF" destination="s2i-xR-oFS" id="wFJ-nS-Omd"/>
+                        <outlet property="resultLabel" destination="TNM-8J-PKa" id="AF6-HY-G9A"/>
                         <segue destination="YmT-gI-Vdx" kind="show" identifier="detailSegue" id="HOD-R3-bZ5"/>
                     </connections>
                 </viewController>
@@ -105,6 +115,7 @@
                                 </state>
                                 <connections>
                                     <action selector="goBackTap:" destination="YmT-gI-Vdx" eventType="touchUpInside" id="JaA-Di-0BC"/>
+                                    <segue destination="vQ3-5s-Fxm" kind="unwind" unwindAction="unwindSegueToMainScreenWithSegue:" id="3p6-S4-PDu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -125,6 +136,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xDg-56-RIF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="vQ3-5s-Fxm" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="789.85507246376812" y="77.678571428571431"/>
         </scene>
