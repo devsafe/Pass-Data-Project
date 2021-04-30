@@ -13,6 +13,7 @@
 		11E0E585263C737A00FAD509 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E0E583263C737A00FAD509 /* Main.storyboard */; };
 		11E0E587263C737C00FAD509 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11E0E586263C737C00FAD509 /* Assets.xcassets */; };
 		11E0E58A263C737C00FAD509 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E0E588263C737C00FAD509 /* LaunchScreen.storyboard */; };
+		11E0E592263C9C6500FAD509 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E0E591263C9C6500FAD509 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		11E0E586263C737C00FAD509 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11E0E589263C737C00FAD509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11E0E58B263C737C00FAD509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11E0E591263C9C6500FAD509 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				11E0E57F263C737A00FAD509 /* SceneDelegate.swift */,
 				11E0E581263C737A00FAD509 /* ViewController.swift */,
 				11E0E583263C737A00FAD509 /* Main.storyboard */,
+				11E0E591263C9C6500FAD509 /* SecondViewController.swift */,
 				11E0E586263C737C00FAD509 /* Assets.xcassets */,
 				11E0E588263C737C00FAD509 /* LaunchScreen.storyboard */,
 				11E0E58B263C737C00FAD509 /* Info.plist */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11E0E592263C9C6500FAD509 /* SecondViewController.swift in Sources */,
 				11E0E582263C737A00FAD509 /* ViewController.swift in Sources */,
 				11E0E57E263C737A00FAD509 /* AppDelegate.swift in Sources */,
 				11E0E580263C737A00FAD509 /* SceneDelegate.swift in Sources */,
